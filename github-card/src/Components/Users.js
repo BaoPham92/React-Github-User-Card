@@ -28,10 +28,10 @@ export default class Users extends Component {
     render() {
 
         return (
-            <div>
+            <div className={`user__container`}>
                 <h1>SOMETHING HERE</h1>
 
-                <UserCard />
+                <UserCard user={this.state.user && {...this.state.user}}/>
             </div>
         )
     }
